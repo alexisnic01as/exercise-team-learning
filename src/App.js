@@ -27,6 +27,7 @@ function App() {
         <p style={{color: "green"}}>
           I am a rising senior studying CS at Jones!
         </p>
+        
       </header>
 
       {/* Add your intro below this comment! Feel free to style it however you like! */}

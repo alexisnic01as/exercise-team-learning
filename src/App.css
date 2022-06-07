@@ -24,6 +24,19 @@
   color: white;
 }
 
+.App-alexis {
+  background-color: orange;
+
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 30px;
+  color: blue;
+}
+
 .App-link {
   color: #61dafb;
 }

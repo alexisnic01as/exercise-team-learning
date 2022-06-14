@@ -5,7 +5,8 @@ import {Person} from './Person.js'
 import {Counter} from './Counter.js'
 
 const team = [
-  {name: "Alexis", college: "Jones", major:"CS", pic: {alexis}, grade:"senior"}
+  {name: "Alexis", college: "Jones", major:"CS", pic: {alexis}, grade:"senior"},
+  {name: "Joy", college: "Sid Rich", major:"CS", grade:"sophomore"}
 ]
 
 function App() {

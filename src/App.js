@@ -1,6 +1,11 @@
 import exercise from './pictures/exercise.png'
 import alexis from './pictures/alexisPic.jpg'
 import './App.css';
+import {Person} from './Person.js'
+
+const team = [
+  {name: "Alexis", college: "Jones", major:"CS", pic: {alexis}, grade:"senior"}
+]
 
 function App() {
   return (
@@ -19,18 +24,10 @@ function App() {
           Check out the Summer Curriculum!
         </a>
       </header>
-      <header className="App-alexis">
-        <h1> 
-          Hi my name is Alexis!
-        </h1>
-        <img src={alexis} alt="yung alexis"/>
-        <p style={{color: "green"}}>
-          I am a rising senior studying CS at Jones!
-        </p>
-        
-      </header>
 
       {/* Add your intro below this comment! Feel free to style it however you like! */}
+
+      {team.map(member => <Person name={member.name} college={member.college} grade={member.grade} major={member.grade} pic={member.pic}/>)}
 
     </div>
   );

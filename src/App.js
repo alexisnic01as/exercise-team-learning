@@ -1,6 +1,12 @@
 import exercise from './pictures/exercise.png'
 import alexis from './pictures/alexisPic.jpg'
 import './App.css';
+import {Person} from './Person.js'
+import {Counter} from './Counter.js'
+
+const team = [
+  {name: "Alexis", college: "Jones", major:"CS", pic: {alexis}, grade:"senior"}
+]
 
 function App() {
   return (
@@ -31,6 +37,7 @@ function App() {
       </header>
 
       {/* Add your intro below this comment! Feel free to style it however you like! */}
+      {team.map(member => <Person name={member.name} college = {member.college} grade={member.grade} major={member.major} pic= {member.pic}/>)}
 
     </div>
   );

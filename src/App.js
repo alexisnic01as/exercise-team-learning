@@ -1,6 +1,13 @@
 import exercise from './pictures/exercise.png'
 import alexis from './pictures/alexisPic.jpg'
+import peppa from './pictures/Pippa.png'
 import './App.css';
+import { Person } from './Person.js';
+
+const team = [
+  {name: "Alexis", college: "Jones", grade: "senior", img: alexis},
+  {name: "Peppa Pig", college: "Wiess", grade: "sophomore", img: peppa}
+]
 
 function App() {
   return (
@@ -18,17 +25,9 @@ function App() {
         >
           Check out the Summer Curriculum!
         </a>
-      </header>
-      <header className="App-alexis">
-        <h1> 
-          Hi my name is Alexis!
-        </h1>
-        <img src={alexis} alt="yung alexis"/>
-        <p style={{color: "green"}}>
-          I am a rising senior studying CS at Jones!
-        </p>
-        
-      </header>
+      </header> 
+
+      {team.map(member => <Person name = {member.name} grade = {member.grade} college = {member.college} img = {member.img}/>)}
 
       {/* Add your intro below this comment! Feel free to style it however you like! */}
 

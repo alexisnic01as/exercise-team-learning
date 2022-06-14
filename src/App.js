@@ -1,6 +1,7 @@
 import exercise from './pictures/exercise.png'
 import alexis from './pictures/alexisPic.jpg'
 import './App.css';
+import { Counter } from './Counter.js';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       </header>
 
       {/* Add your intro below this comment! Feel free to style it however you like! */}
+
+      <Counter/>
 
     </div>
   );

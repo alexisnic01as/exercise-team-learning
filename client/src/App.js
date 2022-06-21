@@ -4,7 +4,7 @@ import './App.css';
 import {Person} from './Person.js'
 
 const team = [
-  {name: "Alexis", college: "Jones", major:"CS", pic: {alexis}, grade:"senior"}
+  {name: "Alexis", college: "Jones", major:"CS", pic: alexis, grade:"senior"}
 ]
 
 function App() {

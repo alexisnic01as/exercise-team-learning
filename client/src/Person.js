@@ -2,7 +2,7 @@
 
 export const Person = (props) => {
 
-    return <div style={{background: "green", height: "50vh"}}>
+    return <div>
         <h1> 
           Hi my name is {props.name}
         </h1>

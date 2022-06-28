@@ -2,12 +2,31 @@ import exercise from './pictures/exercise.png'
 import alexis from './pictures/alexisPic.jpg'
 import './App.css';
 import {Person} from './Person.js'
+import { gql, useQuery, ApolloClient, InMemoryCache } from "@apollo/client"
 
 const team = [
   {name: "Alexis", college: "Jones", major:"CS", pic: alexis, grade:"senior"}
 ]
 
+
+export const client = new ApolloClient({
+  uri: "http://localhost:4000/graphql",
+  cache: new InMemoryCache(),
+});
+
+const GET_ALL_OWLS = gql`
+  query getOwls {
+    owls {
+      name
+      college
+    }
+  }
+`;
+
 function App() {
+  const { data } = useQuery(GET_ALL_OWLS);
+  console.log(data)
+
   return (
     <div className="App">
       <header className="App-header">
